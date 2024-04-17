@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/silver">
+
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/fileName"
+        android:layout_width="180dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+
+        android:text="File Name"
+        android:textColor="@color/white"
+        />
+    <ImageView
+        app:layout_constraintRight_toLeftOf="@id/optionsButton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/playButton"
+        android:src="@drawable/play_image"
+        android:textColor="@color/black"
+        style="?android:borderlessButtonStyle"
+        />
+    <ImageView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/optionsButton"
+        android:src="@drawable/settings_icon"
+        android:textColor="@color/black"
+        style="?android:borderlessButtonStyle"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

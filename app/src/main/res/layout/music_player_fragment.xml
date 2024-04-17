@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.MusicPlayerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="Song Name"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/surfaceView"
+
+        />
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        app:layout_constraintTop_toBottomOf="@+id/musicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/surfaceView" >
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="0:00" />
+
+        <SeekBar
+            app:layout_constraintLeft_toRightOf="@+id/textStart"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/seekBar"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            app:layout_constraintLeft_toRightOf="@+id/seekBar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/textEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="0:00" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/barLayout"
+        >
+        <Button
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/rewindButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/rewind_image"
+            />
+        <Button
+            app:layout_constraintLeft_toRightOf="@+id/rewindButton"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/playButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/pause_image"
+            />
+
+        <Button
+            app:layout_constraintLeft_toRightOf="@+id/playButton"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/forwardButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/forward_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+

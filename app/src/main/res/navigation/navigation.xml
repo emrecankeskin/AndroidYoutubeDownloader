@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/folderFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.emrecan.youtubedownloader.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.emrecan.youtubedownloader.Fragments.BrowserFragment"
+        android:label="browser_fragment"
+        tools:layout="@layout/browser_fragment" />
+    <fragment
+        android:id="@+id/folderFragment"
+        android:name="com.emrecan.youtubedownloader.Fragments.FolderFragment"
+        android:label="folder_fragment"
+        tools:layout="@layout/folder_fragment" />
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.emrecan.youtubedownloader.Fragments.DownloadFragment"
+        android:label="download_fragment"
+        tools:layout="@layout/download_fragment" />
+    <fragment
+        android:id="@+id/connectionFragment"
+        android:name="com.emrecan.youtubedownloader.Fragments.ConnectionFragment"
+        android:label="connection_fragment"
+        tools:layout="@layout/no_connection_fragment" />
+</navigation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/youtubeBrowser"
+        android:icon="@drawable/ic_play_button"
+        android:title="@string/youtube"
+
+        />
+
+    <item
+        android:id="@+id/filesItem"
+        android:icon="@drawable/ic_folder_icon"
+        android:title="@string/files"
+        />
+    <item
+        android:id="@+id/downloadButton"
+        android:icon="@drawable/ic_download_icon"
+        android:title="@string/download"
+        />
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/itemLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Video"
+        android:id="@+id/mediaType"
+        android:textColor="@color/black"
+        />
+    <TextView
+        app:layout_constraintLeft_toRightOf="@+id/mediaType"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/mediaQuality"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+
+        android:text="Quality"
+        android:textColor="@color/black"
+        />
+    <Button
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download"
+        android:id="@+id/downloadButton"
+        android:textColor="@color/black"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
